@@ -1,0 +1,46 @@
+
+.pic {
+    background: linear-gradient(to bottom, white 70%, #686de0 30%);
+    float: left;
+    width: 50%;
+    margin-left: 500px;
+    margin-top: auto;
+    padding: 15px;
+    border: 2px solid white;
+    font-family: sans-serif;
+    font-size:20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 30px;
+    p{
+    padding: 50px;
+    line-height: 80px;
+    font-size: 40px;
+    color: rgb(73, 72, 72);
+    }
+    img {
+    border-radius: 50%;
+    border: 10px solid white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    position: absolute;
+    top: 70%;
+    left: 45%;
+    height:180px
+  }
+  h1{
+      color: white;
+      display: flex;
+      justify-content: center;
+      font-size: 50px;
+      padding-top: 140px;
+  }
+ h2{
+    color: #c3cfe2;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    margin-left: 10px;
+ }
+}

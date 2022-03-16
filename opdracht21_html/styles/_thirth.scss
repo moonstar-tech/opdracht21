@@ -1,0 +1,158 @@
+
+.social-container {
+    display: grid;
+    justify-content: end;
+    margin-top: 350px;
+    margin-bottom: 150px;
+    margin-right: -250px;
+    
+    
+ 
+    }
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    .fa-laptop-code {
+        background-color: #e17b77;
+        width: 50px;
+        height: 50px;
+        margin-bottom: -20px;
+        
+    
+    }
+    
+    .fa-twitter {
+        background-color: #00aced;
+        width: 50px;
+        height: 50px;
+        margin-bottom: -20px;
+        
+    }
+    
+    .fa-linkedin-in {
+        background-color: #007bb6;
+        width: 50px;
+        height: 50px;
+        margin-bottom: -20px;
+    }
+    
+    .fa-facebook-f{
+        background-color: #3b5998;
+        width: 50px;
+        height: 50px;
+        margin-bottom: -20px;
+
+    }
+    
+    .fa-github{
+        background-color: #333;
+        width: 50px;
+        height: 50px;
+        margin-bottom: -20px;
+        
+        
+    }
+    
+    .box{
+        color: white;
+        background-color: #e17b77;
+        height: 52px;
+        margin-bottom: -20px;
+    
+        }
+    
+    .box2{
+        color: white;
+        background-color: #00aced ;
+        
+        
+        }
+
+    .box3{
+        color: white;
+        background-color: #007bb6;
+
+    }
+    .box4{
+        color: white;
+        background-color: #3b5998;
+
+    }
+    .box5{
+        color: white;
+        background-color: #333 ;
+
+    }
+
+.text {
+     text-decoration: underline;
+     
+     position: relative;
+     left: 0px;
+     top: 10px;
+
+}
+
+
+      
+    
+    .fa-laptop-code::before {
+        content: "\f5fc";
+        color: white;
+        position: relative;
+        left: 10px;
+        top: 10px;
+        
+      
+        
+        
+    }
+    .fa-twitter::before {
+        content: "\f099";
+        color: white;
+        position: relative;
+        left: 15px;
+        top: 10px;
+       
+      
+        
+    }
+    .fa-linkedin-in::before {
+        content: "\f0e1";
+        color: white;
+        position: relative;
+        left: 15px;
+        top: 10px;
+        
+      
+    
+    }
+    .fa-facebook-f::before {
+        content: "\f39e";
+        color: white;
+        position: relative;
+        left: 15px;
+        top: 10px;
+        
+        
+    
+    }
+    .fa-github::before {
+        content: "\f09b";
+        color: white;
+        position: relative;
+        left: 15px;
+        top: 10px;
+        
+        
+    }
+    
+
+    .box:hover{
+    
+        transition: 1s cubic-bezier(.17,.67,.83,.67);
+        transform: translate(-250px); 
+        transition-duration: 1s;
+        
+    }
