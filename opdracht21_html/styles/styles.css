@@ -8,6 +8,7 @@
   font-size: 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 30px;
+  position: relative;
 }
 .pic p {
   padding: 50px;
@@ -20,8 +21,8 @@
   border: 5px solid white;
   display: block;
   position: absolute;
-  top: 40%;
-  left: 40%;
+  top: 58%;
+  left: 35%;
   width: 140px;
   height: 120px;
 }
@@ -140,28 +141,12 @@
   justify-content: center;
 }
 
-.hover-class:before {
-  content: " ";
-  opacity: 0;
-}
-
-.hover-class:hover::before {
-  opacity: 1;
-  transition: opacity 0.5s ease;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: black;
-  z-index: 2;
-}
-
 .hover-class img {
   position: absolute;
   display: block;
   max-width: 100%;
-  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .btn {
@@ -178,6 +163,16 @@
 
 .hover-class:hover .btn {
   opacity: 1;
+}
+
+.hover-class:hover {
+  background-color: black;
+  border-radius: 15px;
+  width: 250px;
+}
+
+.hover-class:hover .image {
+  opacity: 0;
 }
 
 .social-container {
