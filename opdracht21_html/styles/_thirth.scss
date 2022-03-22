@@ -4,7 +4,7 @@
     justify-content: end;
     margin-top: 350px;
     margin-bottom: 150px;
-    margin-right: -250px;
+    margin-right: -500px;
     
     
  
@@ -15,16 +15,16 @@
 
     .fa-laptop-code {
         background-color: #e17b77;
-        width: 50px;
+        width: 300px;
         height: 50px;
-        margin-bottom: -20px;
+        margin-bottom: 20px;
         
     
     }
     
     .fa-twitter {
         background-color: #00aced;
-        width: 50px;
+        width: 300px;
         height: 50px;
         margin-bottom: -20px;
         
@@ -32,14 +32,14 @@
     
     .fa-linkedin-in {
         background-color: #007bb6;
-        width: 50px;
+        width: 300px;
         height: 50px;
         margin-bottom: -20px;
     }
     
     .fa-facebook-f{
         background-color: #3b5998;
-        width: 50px;
+        width: 300px;
         height: 50px;
         margin-bottom: -20px;
 
@@ -47,7 +47,7 @@
     
     .fa-github{
         background-color: #333;
-        width: 50px;
+        width: 300px;
         height: 50px;
         margin-bottom: -20px;
         
@@ -59,6 +59,9 @@
         background-color: #e17b77;
         height: 52px;
         margin-bottom: -20px;
+        transition: 1s cubic-bezier(.17,.67,.83,.67);
+        transition-duration: 1s;
+        
     
         }
     
@@ -87,9 +90,8 @@
 
 .text {
      text-decoration: underline;
-     
      position: relative;
-     left: 0px;
+     left:-250px;
      top: 10px;
 
 }
@@ -151,8 +153,6 @@
 
     .box:hover{
     
-        transition: 1s cubic-bezier(.17,.67,.83,.67);
         transform: translate(-250px); 
-        transition-duration: 1s;
-        
+       
     }

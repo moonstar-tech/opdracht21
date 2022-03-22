@@ -1,10 +1,8 @@
 .pic {
   background: linear-gradient(to bottom, white 70%, #686de0 30%);
-  float: left;
-  width: 50%;
-  margin-left: 500px;
-  margin-top: auto;
-  padding: 15px;
+  width: 500px;
+  max-width: 80%;
+  margin: 0 auto;
   border: 2px solid white;
   font-family: sans-serif;
   font-size: 20px;
@@ -13,35 +11,32 @@
 }
 .pic p {
   padding: 50px;
-  line-height: 80px;
-  font-size: 40px;
+  line-height: 40px;
+  font-size: 16px;
   color: #494848;
 }
 .pic img {
   border-radius: 50%;
-  border: 10px solid white;
+  border: 5px solid white;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
   position: absolute;
-  top: 70%;
-  left: 45%;
-  height: 180px;
+  top: 40%;
+  left: 40%;
+  width: 140px;
+  height: 120px;
 }
 .pic h1 {
   color: white;
   display: flex;
   justify-content: center;
-  font-size: 50px;
+  font-size: 25px;
   padding-top: 140px;
 }
 .pic h2 {
   color: #c3cfe2;
   display: flex;
   justify-content: center;
-  font-size: 40px;
-  margin-left: 10px;
+  font-size: 16px;
 }
 
 .parent {
@@ -108,7 +103,7 @@
     grid-area: 4/1/5/2;
   }
 }
-@media only screen and (max-width: 580px) {
+@media only screen and (max-width: 700px) {
   .parent {
     padding-right: 50px;
     padding-left: 50px;
@@ -148,6 +143,10 @@
 .hover-class:before {
   content: " ";
   opacity: 0;
+}
+
+.hover-class:hover::before {
+  opacity: 1;
   transition: opacity 0.5s ease;
   position: absolute;
   top: 0;
@@ -156,10 +155,6 @@
   bottom: 0;
   background-color: black;
   z-index: 2;
-}
-
-.hover-class:hover:before {
-  opacity: 1;
 }
 
 .hover-class img {
@@ -190,7 +185,7 @@
   justify-content: end;
   margin-top: 350px;
   margin-bottom: 150px;
-  margin-right: -250px;
+  margin-right: -500px;
 }
 
 ::-webkit-scrollbar {
@@ -199,35 +194,35 @@
 
 .fa-laptop-code {
   background-color: #e17b77;
-  width: 50px;
+  width: 300px;
   height: 50px;
-  margin-bottom: -20px;
+  margin-bottom: 20px;
 }
 
 .fa-twitter {
   background-color: #00aced;
-  width: 50px;
+  width: 300px;
   height: 50px;
   margin-bottom: -20px;
 }
 
 .fa-linkedin-in {
   background-color: #007bb6;
-  width: 50px;
+  width: 300px;
   height: 50px;
   margin-bottom: -20px;
 }
 
 .fa-facebook-f {
   background-color: #3b5998;
-  width: 50px;
+  width: 300px;
   height: 50px;
   margin-bottom: -20px;
 }
 
 .fa-github {
   background-color: #333;
-  width: 50px;
+  width: 300px;
   height: 50px;
   margin-bottom: -20px;
 }
@@ -237,6 +232,8 @@
   background-color: #e17b77;
   height: 52px;
   margin-bottom: -20px;
+  transition: 1s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  transition-duration: 1s;
 }
 
 .box2 {
@@ -262,7 +259,7 @@
 .text {
   text-decoration: underline;
   position: relative;
-  left: 0px;
+  left: -250px;
   top: 10px;
 }
 
@@ -307,9 +304,7 @@
 }
 
 .box:hover {
-  transition: 1s cubic-bezier(0.17, 0.67, 0.83, 0.67);
   transform: translate(-250px);
-  transition-duration: 1s;
 }
 
 body {
